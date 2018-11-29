@@ -1,0 +1,657 @@
+@charset "UTF-8";
+
+
+
+body,html{
+	margin: 0; /*余白の削除*/
+	padding: 0;
+	width:100%;
+	height:100%;
+}
+
+body{
+/* 	background-image: linear-gradient(to top, #f6f6f6, #f2f4fa, #e8f3ff, #dcf3ff, #cdf4ff);
+	background-attachment: fixed !important; */
+	text-align:center;
+}
+
+/*=======================================header================================================*/
+#header{
+	float:left;
+	width: 100%;
+	height:60px;
+	padding:10px;
+	background-image: url("../images/Tree.jpg");
+	background-position: left top;
+	background-size: cover;
+}
+
+#header h1{
+	font-family: serif;
+	font-size: 24px;
+	letter-spacing: 5.5px;
+	line-height: 0px;
+}
+
+#header-menu {
+	float : left;
+	width : 80%;
+	margin-left : -30px;
+}
+
+#header-menu ul {
+	float : left;
+	marigin-top : 15px;
+	margin-left : 20px;
+	width : 100%;
+}
+
+#header-menu ul li {
+	float:left;
+	list-style : none;
+	padding-left:1%;
+	color:white;
+	font-size:10px;
+}
+
+#header-title {
+	float:left;
+	height:30px;
+	margin-top:13px;
+	margin-left:25px;
+	font-family:'Vidaloka',serif;
+	color:#ffffff;
+	font-size:17px;
+}
+
+
+/*======================================contents================================================*/
+#contents{
+	margin-top : 50px;
+	margin : 0 auto;
+	width : 1000px;
+	height : auto;
+	padding-bottom :10px;
+	margin-bottom :50px;
+	overflow :auto; /*コンテンツの表示を自動設定(スクロール)*/
+/* 	background-color:#B0C4DE; */
+}
+
+.txt-keywords {
+	width : 95%;
+	height : 20px;
+	padding-left : 5%;
+	box-shadow: 0 0 7px #3498db;
+	border: 1px solid #3498db;
+	border-radius: 100px;
+}
+
+.txt-keywords:focus {
+	border: 1px solid #ff9900;
+	color : #011892;
+	outline: 0;
+}
+
+
+.success,.info{
+	border:1px solid;
+	margin: 10px 0px;
+	padding: 15px 10px 15px 50px;
+	background-repeat: no-rpeat;  /*横幅に背景画像を繰り返して表示する*/
+	background-position: 10px center;
+}
+
+.success{
+	forn-size: 0.8em;
+	margin-left: 3%;
+	width: 84%;
+	color: #4F8A10;
+	background-color: #DFF2BF;
+}
+
+
+/*========================================================ボタン==============================================*/
+.submit_btn_box{
+	display: block;
+	width:110px;
+	margin:0 auto;
+}
+
+.submit_btn{
+	/* text-decoration: none; */
+	width:115px;
+	height: 30px;
+	border-radius: 20px;
+	font-size:10px;
+	margin-left: 10px;
+	text-align:center;
+	color:#fff;
+	/* box-shadow:2px 2px #000000; */
+	background: #000000;
+}
+
+.submit_btn:hover{
+	color:#fff;
+	/* box-shadow: 2px 2px #000000; */
+	cursor: pointer;
+	opacity: 0.8;
+	background:#000000;
+/* 	background: -moz-linear-gradient(-90deg, #4477a1, #81a8cb); */
+/* 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4477a1', endColorstr='#000000'); */
+}
+
+.submit_btn:active{
+	outline: none;
+}
+
+//消去系
+.submit_kyoukyo{
+	display: block;
+	width:110px;
+	margin:0 auto;
+}
+
+.submit_kyoukyo{
+    width: 200px;
+    height: 36px;
+    border-radius: 20px;
+    font-size: 10px;
+    margin-left: 10px;
+    text-align: center;
+    color: #fff;
+    /* box-shadow: 2px 2px #000000; */
+    background: blue;
+}
+
+
+//決定系
+.submit_kanryou{
+	display: block;
+	width:110px;
+	margin:0 auto;
+}
+
+.submit_kanryou {
+    text-decoration: none;
+    width: 200px;
+    height: 36px;
+    border-radius: 20px;
+    font-size: 10px;
+    margin-left: 10px;
+    text-align: center;
+    color: #fff;
+    /* box-shadow: 2px 2px #000000; */
+    background: #000000;
+}
+
+/*=======================================form入力部分================================================*/
+.main-form{
+	width:70%;
+	font-size: 20px;
+	text-align:center;
+	margin:0 auto;
+	margin-bottom:40px;
+	background-color:ivory;
+	border-radius:10px;
+	clear:left;
+}
+.txt{
+	width:80%;
+	border-radius:10px;
+	height: 22px;
+	margin-bottom: 10px;
+}
+.checker{
+	margin-bottom:15px;
+}
+.log_label{
+	text-align:left;
+}
+.reset{
+	font-size:15px;
+}
+/*=======================================table(vertical-list)================================================*/
+/* table.vertical-list-table{
+	width: 90%;
+	border-collapse: separate; ボーダーを重ねて表示
+	border-spacing: 0;
+	text-align: left;
+	font-size: 1.4rem;　二重掛け防止(文字重なり)
+	line-height: 1.5;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+table.vertical-list-table th{
+	width: 25%;
+	padding: 10px;
+	font-weight: 400;
+	vartical-align: top; ベースラインを上で揃える
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	color: #000000;
+}
+
+table.vertical-list-table td{
+	width: 75%;
+	padding: 10px;
+	vartical-align: top;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+table.vertical-list-table, th, td{
+	margin: 3%;
+	border-collapse:collapse; セルボーダーの表紙の仕方を全部で一つにする
+	border: 1px solid #ccc;
+	line-height: 1.5;
+}
+
+=======================================table(horizontal)================================================
+table.horizontal-list-table,th,td{
+	margin: 3%;
+	width:90%;
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+	line-height:1.5;
+}
+
+table.horizontal-list-table th{
+	width: 150px;
+	padding: 10px;
+	font-weight:bold;
+	font-size:0.8em;
+	text-align:center;
+	vertical-align: top;
+	color:#000000;
+}
+
+table.horizontal-list-table td{
+	width: 350px;
+	padding: 10px;
+	font-size: 0.8em;
+	text-align: center;
+	vertical-align: top;
+} */
+/*=============================================Footer=======================================================*/
+#footer {
+	width:100%;
+	height:60px;
+	text-align:center;
+	font-size:24px;
+	line-height:60px;
+	color:white;
+	position:fixed;
+	bottom:0;
+	margin-top:60px;
+	 background-image: url("../images/Tree.jpg");
+	background-position: left top;
+	background-size: cover;
+}
+
+/*=================================================ERROR==================================================*/
+.error{
+	font-size:
+}
+.error-message{
+	color:#FF0000;
+}
+
+#login{
+	border-collapse : separate;
+}
+
+
+/*=================productList.jsp=================*/
+
+#product-table{
+	float:clear;
+}
+
+#products {
+    width: 85%;
+    min-width: 760px;
+    max-width: 1100px;
+    display: inline-block;
+}
+
+#product-list {
+    width: 28%;
+    /* float: left; */
+    display: inline-block;
+    margin: 10px;
+    border-right: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-radius: 10px;
+}
+
+#product-list ul li {
+    display: block;
+    float: left;
+    width: 85%;
+    height: 100%;
+    list-style-type: none;
+    /* background: #00cccc; */
+    text-align: center;
+}
+
+#product-list ul li img {
+    width: 95%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+
+/*=================productDetails.jsp=================*/
+
+.details-contents {
+    width: 100%;
+    display: inline-block;
+    max-width: 1000px;
+}
+
+.left {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.details-contents .left img {
+    width: 300px;
+    height: 300px;
+    margin-top: 45px;
+}
+
+.addCart_btn{
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.right {
+    float: left;
+    width: 65%;
+    text-align: center;
+}
+
+.details-table th{
+    background-color: #B4B1B1;
+    width: 250px;
+}
+
+.details-table td{
+    background-color: #E4E1E1;
+    width: 350px;
+    line-height: 40px;
+}
+
+.details-table th:after{
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-left-color: #A4A4A4;
+    border-width: 10px;
+    margin-top: -10px;
+}
+
+.product-details-recommend-box {
+    width: 100%;
+    display:inline-block;
+    max-width:1000px;
+}
+
+.product-details-recommend-box {
+    width: 1000px;
+    height: 250px;
+    clear: both;
+    margin: 0 auto;
+}
+
+.product-details-recommend-box p{
+    text-align: center;
+}
+
+.product-details-recommend-box ul li {
+    float: left;
+    width: 24%;
+    display: inline-block;
+    margin: 0px 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    list-style: none;
+    font-size: calc(60% + 0.5vw);
+}
+
+.recommends {
+    width: 75%;
+    display: inline-block;
+    /* text-align: center; */
+}
+
+.details-table{
+    margin-bottom: 20px;
+    border-spacing: 0 5px;
+    margin-left: 10%;
+}
+
+.recommend-image-box {
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+/*=================cart.jsp=================*/
+
+.message{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.error-message{
+	text-align: center;
+	margin-bottom:10px;
+	color: red;
+}
+
+.cart-contents {
+    width: 700px;
+    padding-top: 30px;
+    margin: 0 auto;
+    height: 300px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.cart-left{
+	position: relative;
+	float: left;
+}
+
+.cart-left .checkbox{
+	position: absolute;
+	top: 50%;
+	right: 105%;
+	transform: translateY(-50%);
+}
+
+.cart-left {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+}
+
+.cart-right{
+	margin-top: 20px;
+	margin-left: 50px;
+	float: left;
+}
+
+.product-name-kana {
+    color: blue;
+    padding-left: 65px;
+}
+
+.product-name{
+	color: blue;
+	font-size: larger;
+}
+
+.cart-right .price{
+	margin-top: 15px;
+	color: red;
+	font-size: larger;
+}
+
+.company{
+	margin-top: 15px;
+}
+
+.subtotal {
+    margin-top: 35px;
+    font-size: x-large;
+}
+
+.cart-total-price{
+    text-align: center;
+    color: red;
+}
+
+/*===================================complete=====================================*/
+.kamaboko{
+	text-align:center;
+	border: solid 3px;
+	border-radius: 40px 10px 40px 10px;
+	height: 130px;
+	position: relative;
+	top: 50px;
+	margin: 50px;
+	padding: 35px;
+}
+
+.errorkamaboko{
+	text-align:center;
+	background-color:#DDDDDD;
+	border-radius: 40px 10px 40px 10px;
+	height: 130px;
+	position: relative;
+	top: 50px;
+	margin: 50px;
+	padding: 35px;
+}
+/*=======================Responsive===================*/
+@media screen and (max-width: 962px){
+	#header{
+	width:962px;
+	}
+}
+
+/*=======================resetPassword.jsp===================*/
+
+#repass-wrapper{
+	border: 2px dashed black;
+    width: 70%;
+    margin: 50px auto auto auto;
+}
+
+#repass-title{
+	margin: 50px 0 ;
+	font-size: 20px;
+}
+
+#resetbtn{
+	margin-bottom:30px;
+}
+
+#repass-form-wrapper{
+	margin-top: 50px;
+}
+
+#repass-form{
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-spacing: 0 10px;
+}
+
+#repass-form tr th{
+	background-color: #B4B1B1;
+	width: 300px;
+}
+
+#repass-form tr td{
+	background-color: #E4E1E1;
+	width: 300px;
+	line-height: 40px;
+}
+
+/*=======================myPage.jsp===================*/
+#mypage-title{
+	margin-top: 50px;
+	font-size: 20px;
+	margin-right: 475px;
+}
+
+#mypage-table-wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#mypage-form{
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-spacing: 0 10px;
+}
+
+#mypage-btn{
+	margin-bottom:30px;
+}
+
+#mypage-form tr th{
+	background-color: #B4B1B1;
+	width: 300px;
+}
+
+#mypage-form tr td{
+	background-color: #E4E1E1;
+	width: 300px;
+	line-height: 40px;
+}
+/*=================settlementConfirm.jsp=================*/
+.address{
+    width: 60%;
+    display: inline-block;
+	margin-bottom:15px;
+}
+
+.address-select{
+    text-align: left;
+    margin: 10px;
+}
+
+.address table{
+    width: 100%;
+    display: inline-block;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px 0 10px 10px;
+}
+
+.address table th{
+    border-style: none;
+    width: 25%;
+}
+
+.address table td{
+    width: 40%;
+    border-style: none;
+}
